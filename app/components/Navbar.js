@@ -38,12 +38,17 @@ const Navbar = () => {
         className={`fixed  top-14 left-0 h-full w-64 bg-blue-50 shadow-lg z-50 transform transition-transform duration-300 ${isAsideOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
-        <ul className="p-4">
-          <li className='text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center'><Link href="/home" ></Link>Home</li>
+        <ul className="p-4 flex flex-col gap-2 ">
+          <li className='text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center'><Link href="/" ></Link>Home</li>
           <li className='text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center'><Dropdown/> </li>
+                    <li className='text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center'><Link href="/" ></Link>Contact</li>
+                    <li className='text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center'><Link href="/" ></Link>Write your Quotes</li>
         </ul>
       </aside>
+          <section>
 
+            
+          </section>
     </>
   )
 }
