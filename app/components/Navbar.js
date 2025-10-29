@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./Dropdown";
 const Navbar = () => {
-  const [isAsideOpen, setIsAsideOpen] = useState(true);
+  const [isAsideOpen, setIsAsideOpen] = useState(false);
   const openAside = () => {
     setIsAsideOpen(!isAsideOpen);
   };
@@ -19,7 +19,8 @@ const Navbar = () => {
           </div>
           <div className="logo">
             <h1 className="font-bold text-2xl flex items-center ">
-              <span className="text-green-700">&lt;</span>QUOTES/
+              <span className="text-green-700">&lt;</span>{" "}
+              <Link href="/">QUOTES/</Link>
               <span className="text-green-700">&gt;</span>
             </h1>
           </div>
@@ -32,25 +33,43 @@ const Navbar = () => {
           }`}
       >
         <ul className="p-4 flex flex-col gap-2 text-lg">
-          <li className="text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
-            <Link href="/"></Link>Home
+          <li>
+            <Link
+              className="text-center flex rounded-4xl   hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
+              href="/"
+            >
+              Home
+            </Link>
           </li>
-            <li className="text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
-              <Link href="/"></Link>Read Quotes
-            </li>
-          <li className="text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
-            <Dropdown />{" "}
+          <li>
+            <Link
+              className="text-center flex rounded-4xl   hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
+              href="/readquotes"
+            >
+              Read Quotes
+            </Link>
           </li>
-          <li className="text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
-            <Link href="/"></Link>Contact
+          <li className="text-center flex rounded-4xl   hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
+            <Dropdown />
           </li>
-          <li className="text-center flex rounded-4xl hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center">
-            <Link href="/"></Link>Write your Quotes
+          <li>
+            <Link
+              className="text-center flex rounded-4xl    hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
+              href="/"
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-center flex rounded-4xl   hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
+              href="/"
+            >
+              Write your Quotes
+            </Link>
           </li>
         </ul>
       </aside>
-
-   
     </>
   );
 };

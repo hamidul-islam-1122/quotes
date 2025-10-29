@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
+
       <section>
         <div className="hero-section container mx-auto ">
           <div className="main flex items-center justify-center flex-col h-90  gap-5">
