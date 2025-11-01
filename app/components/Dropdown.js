@@ -15,7 +15,9 @@ const Dropdown = () => {
         <>
             <div className="dropdpwn">
                 <button className='flex items-center hover:bg-blue-100 hover:rounded-3xl px-14 py-1 '
-                    onClick={toggleDropdown}>Your type<span><HugeiconsIcon icon={ArrowDown01Icon} /></span></button>
+                    onClick={toggleDropdown}>
+                        
+                        Your type<span><HugeiconsIcon icon={ArrowDown01Icon} /></span></button>
 
                 {isOpen && (
                     <div className="absolute mt-2 w-40 rounded-lg bg-white shadow-lg  z-10">
