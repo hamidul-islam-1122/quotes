@@ -55,9 +55,9 @@ const Navbar = () => {
           <li>
             <Link
               className="text-center flex rounded-4xl    hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
-              href="/"
+              href="/about"
             >
-              Contact
+              About
             </Link>
           </li>
           <li>
