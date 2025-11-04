@@ -3,26 +3,26 @@ import React, { useState , useEffect } from "react";
 
 export default function Page() {
   
-  const [quotes, setQuotes] = useState([]);
+  const [Quotes3, setQuotes3] = useState([]);
   const [loading, setLoading] = useState(false)
    useEffect(() => {
-    const rendereddata = localStorage.getItem("quotes");
+    const rendereddata = localStorage.getItem("Quotes3");
     if (rendereddata) {
-      setQuotes(JSON.parse(rendereddata));
+      setQuotes3(JSON.parse(rendereddata));
     }
   }, []);
 
 
-  const fetchQuotes = async () => {
+  const fetchQuotes3 = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/route1", { method: "POST" });
+      const res = await fetch("/api/route3", { method: "POST" });
       const data = await res.json();
-      const updatedQuotes = [...quotes, data];
+      const updatedQuotes3 = [...Quotes3, data];
       
-      localStorage.setItem("quotes", JSON.stringify(updatedQuotes));
+      localStorage.setItem("Quotes3", JSON.stringify(updatedQuotes3));
 
-      setQuotes((prev) => [...prev, data]);
+      setQuotes3((prev) => [...prev, data]);
     } catch (err) {
       console.error("Error fetching quote:", err);
     } finally {
@@ -30,21 +30,22 @@ export default function Page() {
     }
 
   };
+  
 
   return (
     <main className="p-6 flex flex-col items-center">
-      <h1 className="font-bold text-3xl mb-4">Read Quotes</h1>
+      <h1 className="font-bold text-3xl mb-4">Daily quotes</h1>
       <button
-        onClick={fetchQuotes}
+        onClick={fetchQuotes3}
         disabled={loading}
         type="button" className="text-white cursor-pointer bg-gradient-to-r  from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">{loading ? "loading ..." : "Fetch Quote"}</button>
       <p className="text-red-500"></p>
 {
-quotes.length === 0 && !loading ? (
-  <p className="mt-4">No quotes available. Click "Fetch Quote" to get started!</p>
+Quotes3.length === 0 && !loading ? (
+  <p className="mt-4">No Quotes3 available. Click "Fetch Quote" to get started!</p>
 ) : null
 }
-      {quotes.map((q, i) => (
+      {Quotes3.map((q, i) => (
         <div key={i} className="bg-gray-100 px-10 mt-4 rounded-2xl ">
           <p className=" mb-2 font-semibold text-lg ">"{q.q}"</p>
           <p>— {q.a}</p>

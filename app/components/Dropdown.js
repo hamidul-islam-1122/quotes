@@ -23,13 +23,13 @@ const Dropdown = () => {
                     <div className="absolute mt-2 w-40 rounded-lg bg-white shadow-lg  z-10">
                         <ul className="py-2">
                             <li className="px-4 py-2 hover:bg-blue-100 ">
-                                <Link href="/">Motivational</Link>
+                                <Link href="/Motivational">Motivational</Link>
                             </li>
                             <li className="px-4 py-2 hover:bg-blue-100">
-                                <Link href="/">Daily speech</Link>
+                                <Link href="/dailyquotes">Daily speech</Link>
                             </li>
                             <li className="px-4 py-2 hover:bg-blue-100">
-                                <Link href="/">Technical</Link>
+                                <Link href="/random">Random</Link>
                             </li>
                         </ul>
                     </div>

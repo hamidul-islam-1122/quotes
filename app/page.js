@@ -1,7 +1,10 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
+"use client";
 export default function Home() {
+  const openreadquotes = () => {
+    window.location.href = "/readquotes";
+  }
   return (
+      
     <>
 
       <section>
@@ -21,7 +24,7 @@ export default function Home() {
       </section>
       <section className="section2 flex items-center justify-center">
 
-        <button type="button" className="text-white bg-gradient-to-r w-sm from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read the quotes</button>
+        <button onClick={openreadquotes} type="button" className="text-white bg-gradient-to-r w-sm from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read the quotes</button>
 
       </section>
     </>
