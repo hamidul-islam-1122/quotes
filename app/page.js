@@ -9,7 +9,7 @@ export default function Home() {
 
       <section>
         <div className="hero-section container mx-auto ">
-          <div className="main flex items-center justify-center flex-col h-90  gap-5 max-md:gap-2 max-md:h-40  ">
+          <div className="main flex items-center justify-center flex-col h-90  gap-5 max-md:gap-3 max-md:h-40  ">
             <p className="font-bold text-5xl max-md:text-3xl max-sm:text-xl">
               <span className="font-bold">&quot;</span>Your Own Quotes web
               <span className="font-bold">&quot;</span>
