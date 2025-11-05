@@ -10,13 +10,13 @@ export default function Home() {
       <section>
         <div className="hero-section container mx-auto ">
           <div className="main flex items-center justify-center flex-col h-90  gap-5 max-md:gap-2 max-md:h-40  ">
-            <p className="font-bold text-5xl max-md:text-3xl max-sm:text-lg">
+            <p className="font-bold text-5xl max-md:text-3xl max-sm:text-xl">
               <span className="font-bold">&quot;</span>Your Own Quotes web
               <span className="font-bold">&quot;</span>
             </p>
-            <p className="font-bold text-5xl max-md:text-3xl max-sm:text-lg">Publish/Read</p>
+            <p className="font-bold text-5xl max-md:text-3xl max-sm:text-xl">Publish/Read</p>
 
-            <div className="p2 text-lg max-md:text-lg max-sm:text-[10px]">
+            <div className="p2 text-lg max-md:text-lg max-sm:text-[20px]">
               <p>No Login needed. Just Get Your Quotes</p>
             </div>
           </div>
