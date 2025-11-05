@@ -74,7 +74,7 @@ quotes.length === 0 && !loading ? (
 }
       {quotes.map((q, i) => (
         <div key={i} className="bg-gray-100 px-10 mt-4 rounded-2xl ">
-          <p className=" mb-2 font-semibold text-lg ">"{q.q}"</p>
+          <p className=" mb-2 font-semibold text-lg ">&ldquo;{q.q}&rdquo;</p>
           <p>— {q.a}</p>
         </div>
       ))}

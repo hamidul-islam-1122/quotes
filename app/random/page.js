@@ -73,7 +73,7 @@ export default function Page() {
       }
       {Quotes4.map((q, i) => (
         <div key={i} className="bg-gray-100 px-10 mt-4 rounded-2xl ">
-          <p className=" mb-2 font-semibold text-lg ">"{q.content}"</p>
+          <p className=" mb-2 font-semibold text-lg ">&ldquo;{q.content}&rdquo;</p>
           <p>— {q.author}</p>
         </div>
       ))}
