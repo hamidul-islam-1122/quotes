@@ -45,7 +45,7 @@ transition={Bounce}
   </div>
   <div className="w-1/2 max-sm:w-full">
   <h2  className="text-xl font-semibold mt-4">Purpose</h2>  
-    <p className="mt-2">Most Website want login  or they Don't give quotes so we made this to help You all </p>
+    <p className="mt-2">Most Website want login  or they Don&apos;t give quotes so we made this to help You all </p>
      </div>
 </section>
 
