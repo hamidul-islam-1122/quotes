@@ -1,8 +1,22 @@
 "use client";
 import React, { useState , useEffect } from "react";
-
+import { ToastContainer, toast, Bounce } from "react-toastify";
 export default function Page() {
-  
+    useEffect(() => {
+toast.success('Welcome to reading section', {
+position: "bottom-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+transition: Bounce,
+});
+  }, []);
+
+
   const [quotes, setQuotes] = useState([]);
   const [loading, setLoading] = useState(false)
    useEffect(() => {
@@ -33,6 +47,19 @@ export default function Page() {
 
   return (
     <main className="p-6 flex flex-col items-center">
+      <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+transition={Bounce}
+/>
       <h1 className="font-bold text-3xl mb-4">Read Quotes</h1>
       <button
         onClick={fetchQuotes}

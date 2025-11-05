@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav>
-        <div className="navbar flex items-center gap-4 p-3 bg-sky-100">
+        <div className="navbar flex items-center gap-4 p-3 bg-sky-100 max-sm:gap-2">
           <div className="hamburger cursor-pointer" onClick={openAside}>
             <Image src="/menu.svg" alt="menu-icon" width="25" height="25" />
           </div>
@@ -29,8 +29,9 @@ const Navbar = () => {
 
       {/* navigationn aside area */}
       <aside
-        className={`fixed  top-14 left-0 h-full w-64 bg-blue-50 shadow-lg z-50 transform transition-transform duration-300 ${isAsideOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+        className={`max-sm:w-fit  fixed  top-14 left-0 h-full w-64 bg-blue-50 shadow-lg z-50 transform transition-transform duration-300 ${
+          isAsideOpen ? "translate-x-0" : "-translate-x-full "
+        }`}
       >
         <ul className="p-4 flex flex-col gap-2 text-lg">
           <li>
@@ -58,14 +59,6 @@ const Navbar = () => {
               href="/about"
             >
               About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="text-center flex rounded-4xl   hover:bg-blue-700/30 hover:backdrop-blur-md transition-all duration-300 h-10 justify-center items-center"
-              href="/"
-            >
-              Write your Quotes
             </Link>
           </li>
         </ul>
