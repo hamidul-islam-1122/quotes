@@ -24,7 +24,12 @@ export default function Home() {
       </section>
       <section className="section2 flex items-center justify-center">
 
-        <button onClick={openreadquotes} type="button" className=" text-white bg-gradient-to-r w-sm from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 max-sm:w-[140px]">Read the quotes</button>
+        <button 
+          onClick={openreadquotes} 
+          type="button" 
+          className="custom-gradient text-white cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 max-sm:w-[140px]">
+          Read the quotes
+        </button>
 
       </section>
     </>

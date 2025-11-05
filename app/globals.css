@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.custom-gradient {
+  background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%);
+  transition: transform 0.2s;
+}
+
+.custom-gradient:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0891b2 0%, #2563eb 100%);
+}
