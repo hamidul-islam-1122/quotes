@@ -60,7 +60,7 @@ pauseOnHover
 theme="dark"
 transition={Bounce}
 />
-      <h1 className="font-bold text-3xl mb-4">Daily quotes</h1>
+      <h1 className="font-bold text-3xl mb-4  max-sm:text-2xl">Daily quotes</h1>
       <button
         onClick={fetchQuotes3}
         disabled={loading}

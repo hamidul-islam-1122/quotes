@@ -59,7 +59,7 @@ export default function Page() {
         theme="dark"
         transition={Bounce}
       />
-      <h1 className="font-bold text-3xl mb-4">Random quotes</h1>
+      <h1 className="font-bold text-3xl mb-4 max-sm:text-2xl">Random quotes</h1>
       <button
         onClick={fetchQuotes4}
         disabled={loading}

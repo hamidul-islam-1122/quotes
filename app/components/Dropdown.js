@@ -13,7 +13,7 @@ const Dropdown = () => {
     return (
 
         <>
-            <div className="dropdpwn">
+            <div className="dropdpwn ">
                 <button className='flex items-center hover:bg-blue-100 hover:rounded-3xl px-14 py-1 '
                     onClick={toggleDropdown}>
                         
