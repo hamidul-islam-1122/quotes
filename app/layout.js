@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Get Your Quotes",
   description: "Storage of quotes. Just read and write your own quotes.",
+  icons: {
+    icon: "/favicon.ico", 
+  },
+
 };
 
 export default function RootLayout({ children }) {
